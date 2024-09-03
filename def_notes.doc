@@ -1,0 +1,231 @@
+http://stageintranet.defensoria.ce.def.br/pt-br/login/
+
+
+Solicitar mesma rotina de manutenção servidor nossa defensoria;
+
+===============================================================================================================================================================================
+Alterando pass usuarios postgres
+ALTER USER user_name WITH PASSWORD 'password';
+===============================================================================================================================================================================
+
+Check Point Mobile - Main - https://189.90.160.108/sslvpn/Portal/Main
+Painel - Central de Serviços - DPGE - https://centraldeservicos.defensoria.ce.def.br/
+Nossa Defensoria | Nossa Defensoria - https://nossa.defensoria.ce.def.br/admin / https://stage-nossa.defensoria.ce.def.br/admin / https://hg-nossa.defensoria.ce.def.br/admin
+django admin theme base on adminlte - https://github.com/wuyue92tree/django-adminlte-ui
+AdminLTE 2 | General UI - https://adminlte.io/themes/AdminLTE/pages/UI/general.html
+GITLAB - https://gitlab.defensoria.ce.def.br/
+https://189.90.160.108/sslvpn/Portal/Main
+===============================================================================================================================================================================
+MIGRAÇÃO: SIC - SISTEMA DE ACOMPANHAMENTO DOS  ASSISTIDOS DA DEFENSORIA - HELP CAROL
+Sistema de Informações Criminais
+77011970363
+Dpge2022$ce
+marylene.gomes@defensoria.ce.def.br
+
+banco de produção
+192.168.0.12
+
+DAG DJANGO AUTO GENERATOR
+https://github.com/marcelomdevasconcellos/dag-django-autogeneratorhttps://github.com/marcelomdevasconcellos/dag-django-autogenerator
+
+VPN:
+https://189.90VBKUJYKL .  J.160.108/sslvpn/Portal/Main
+===============================================================================================================================================================================
+Setar valor correto index tabelas
+SELECT setval('table_name_id_seq', (SELECT MAX(id) FROM table_name)+1);
+===============================================================================================================================================================================
+04466255318
+
+Dpge2021$ce
+Carol/123-ce
+@Carol0101
+SIA
+
+82881189415 ilnar
+Dpge2021$ce
+Dpge2023$ce
+
+user: dev  senha: Dpgece@D3v
+lidia.fortes@defensoria.ce.def.br
+Senha gerada para Lidia Machado Fortes é: ammwsvig
+
+515151
+senha: Dpge2022$ce
+===============================================================================================================================================================================
+VPN Dpg3cE@VpN
+sudo snx -s 170.78.5.95 -u matheus.feitosa
+7Tk)F6!UcpcqVEQs
+
+srv-prod-sia-new  - ip: 192.168.0.129     user root   senha: QbFEKV3qs#k5P@BT
+banco prod sia -   ip:  192.168.0.199           sia
+
+postgres | 9ef%*2L2vKVmW4Ji
+
+seguem os dados:
+ssh: 192.168.0.131
+senha: mkI463uL
+usuário: desenvolvimento
+
+192.168.0.195
+sic_new = DpG3cES1C
+matheusfeitosa : M@1d83@7Bil
+
+colocar nome_operador
+colocar tipo_de_contrato
+
+user: multi pass:DpgEc3MuLT1nD
+192.168.0.76
+
+192.168.0.116
+defensoria | Dpg3Ce@s1C - prod
+
+192.168.0.115
+defensoria | C)t1n0697@2024 -  stage
+
+Server 192.168.0.120
+dpge
+senha: DpG3cE@dEV
+
+192.168.0.113
+defensoria C)t1n0697@2024
+
+ssh root@192.168.0.75
+kghSK9x6D1XxoprL33*s
+
+SIV V2
+base sic  ip - 192.168.0.195
+sic = DpG3cES1C
+
+
+http://172.24.21.2:8083/pesquisa/preso/nome/Teste
+defensoria
+6D?^pu8JSP7[}:tM
+
+https://www.defensoria.ce.def.br/wp-admin
+matheus.feitosa
+BM9xun7MIo3PnKm8
+===============================================================================================================================================================================
+https://meet.defensoria.ce.def.br/
+
+importacao_arrecadacoes_id_seq
+
+SELECT arrecadacoes.cartorio_id
+FROM arrecadacoes
+INNER JOIN clientes 
+ON pedidos.cliente_id = clientes.id;
+
+Neste exemplo, a consulta retornará o número do pedido e o nome do cliente para todos os pedidos que têm um cliente correspondente na tabela de clientes.
+
+Lembre-se de adaptar a consulta de acordo com os nomes de suas tabelas e colunas específicas em seu banco de dados PostgreSQL.
+===============================================================================================================================================================================
+REINDEXAÇÃO DE TODAS AS TABELAS DE UM SCHEMA
+
+DO $$ 
+DECLARE 
+    max_id INT;
+    dynamic_sql TEXT;
+    table_rec RECORD;
+BEGIN
+    -- Cursor para obter nomes de tabela no schema "seu_schema"
+    FOR table_rec IN (SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' AND table_type = 'BASE TABLE' and table_name LIKE '%sia%') 
+    LOOP
+        -- Constrói a instrução SQL para obter o valor máximo da chave primária
+        dynamic_sql := 'SELECT COALESCE(MAX(' || quote_ident('id') || '), 0) + 1 FROM ' || quote_ident(table_rec.table_name);
+        EXECUTE dynamic_sql INTO max_id;
+
+        -- Constrói a instrução SQL para ajustar a sequência associada à tabela
+        dynamic_sql := 'ALTER SEQUENCE ' || quote_ident(table_rec.table_name || '_id_seq') || ' RESTART WITH ' || max_id;
+        EXECUTE dynamic_sql;
+    END LOOP;
+END $$;
+===============================================================================================================================================================================
+let URL = `https://intranet.defensoria.ce.def.br/pt-br/api/orgaos-por-titularidade-designacao/?cpf=${cpf}&data=${data}`; ✅ 
+
+              // let URL = `${URL_TITULARIDADE}/?cpf=${cpf}&data=${data}`;
+
+git config --global user.email "Matheus Feitosa"
+git config --global user.name "matheus.feitosa@defensoria.ce.def.br"
+===============================================================================================================================================================================
+
+ SELECT DISTINCT andamentos.id AS anda_id,
+    andamentos.classificacao_andamento_id,
+    andamentos.processo_id,
+    andamentos.data,
+    andamentos.created_at,
+    andamentos.updated_at,
+    andamentos.observacao,
+    andamentos.forca_tarefa,
+    andamentos.pa_advogado_particular,
+    andamentos.pa_asistencia_juridica,
+    andamentos.pa_defensor_publico,
+    andamentos.pa_sem_asistencia,
+    andamentos.at_presencial,
+    andamentos.at_analise_processual,
+    andamentos.sp_provisiorio,
+    andamentos.sp_condenado,
+    andamentos.forca_tarefa_id,
+    audits.user_id,
+    audits.action,
+    classificacao_andamentos.descricao AS class_anda_descricao,
+    classificacao_andamentos.id AS class_anda_id,
+    audits.auditable_type
+   FROM ((andamentos
+     JOIN classificacao_andamentos ON ((classificacao_andamentos.id = andamentos.classificacao_andamento_id)))
+     JOIN audits ON ((audits.auditable_id = andamentos.id)));
+	 
+	 
+	 
+SELECT 
+  DISTINCT andamentos.id AS anda_id, 
+  andamentos.classificacao_andamento_id, 
+  andamentos.processo_id, 
+  andamentos.data, 
+  andamentos.created_at, 
+  andamentos.updated_at, 
+  andamentos.observacao, 
+  andamentos.forca_tarefa, 
+  andamentos.pa_advogado_particular, 
+  andamentos.pa_asistencia_juridica, 
+  andamentos.pa_defensor_publico, 
+  andamentos.pa_sem_asistencia, 
+  andamentos.at_presencial, 
+  andamentos.at_analise_processual, 
+  andamentos.sp_provisiorio, 
+  andamentos.sp_condenado, 
+  andamentos.forca_tarefa_id, 
+  audits.user_id, 
+  audits.action, 
+  classificacao_andamentos.descricao AS class_anda_descricao, 
+  classificacao_andamentos.id AS class_anda_id, 
+  audits.auditable_type 
+FROM 
+  (
+    (
+      andamentos 
+      JOIN classificacao_andamentos ON (
+        (
+          classificacao_andamentos.id = andamentos.classificacao_andamento_id
+        )
+      )
+    ) 
+    JOIN audits ON (
+      (
+        audits.auditable_id = andamentos.id
+      )
+    )
+    JOIN processo_judiciais ON (
+      (
+		  andamentos.processo_id = processo_judiciais.id
+      )
+    )
+    JOIN assistidos ON (
+      (
+		  processo_judiciais.assistido_id = assistidos.id
+      )
+    )
+    JOIN adm_pgeatv100029.colaboradores ON (
+      (
+		  audits.user_id = adm_pgeatv100029.colaboradores.id
+      )
+    )
+  ) WHERE audits."action" = 'create';
